@@ -158,6 +158,28 @@
       transform: scale(1.1);
       background-color: rgba(0,255,255,0.1);
     }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 30px;
+      background-color: var(--ciano);
+      color: #000;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.6);
+      z-index: 1000;
+      transition: transform 0.3s ease;
+      line-height: 60px;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: #00cccc;
+    }
   </style>
 </head>
 <body>
@@ -219,5 +241,9 @@
   <footer>
     © 2025 Marcelo Emanoel
   </footer>
+
+  <a href="https://wa.me/5561996463677" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>
