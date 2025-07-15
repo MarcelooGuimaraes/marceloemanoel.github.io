@@ -4,18 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Marcelo Emanoel - Portfólio</title>
-
-  <!-- Fontes e Ícones -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
+  <script src="https://kit.fontawesome.com/a2d9d5c6fd.js" crossorigin="anonymous"></script>
   <style>
     :root {
-      --gradiente-tech: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      --bg-card: rgba(32, 54, 72, 0.85);
-      --ciano: #00e6e6;
+      --gradiente-tech: linear-gradient(160deg, #0d0d1a, #0a0a14, #000000);
+      --bg-card: rgba(10, 10, 20, 0.85);
+      --ciano: #00f7ff;
       --white: #ffffff;
-      --text: #e0e0e0;
+      --text: #cccccc;
     }
 
     * {
@@ -29,7 +26,6 @@
       background: var(--gradiente-tech);
       color: var(--text);
       line-height: 1.6;
-      transition: background 0.5s, color 0.5s;
     }
 
     header {
@@ -56,13 +52,13 @@
       background: var(--bg-card);
       border-radius: 12px;
       padding: 2rem;
-      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      box-shadow: 0 0 30px rgba(0,0,0,0.4);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     section:hover {
       transform: translateY(-3px);
-      box-shadow: 0 0 40px rgba(0,255,255,0.2);
+      box-shadow: 0 0 50px rgba(0,255,255,0.2);
     }
 
     h2 {
@@ -73,7 +69,7 @@
 
     h3 {
       color: var(--white);
-      margin-top: 1.5rem;
+      margin-top: 1.2rem;
     }
 
     .badge {
@@ -96,46 +92,71 @@
       text-decoration: underline;
     }
 
-    footer {
+    .contact {
+      margin-top: 2rem;
       text-align: center;
-      padding: 2rem;
-      color: var(--text);
     }
 
-    footer .social-icons {
-      margin-top: 1rem;
-    }
-
-    footer .social-icons a {
-      margin: 0 0.8rem;
+    .contact a {
+      margin: 0 1rem;
+      display: inline-block;
       font-size: 1.5rem;
-      transition: transform 0.3s ease;
+      color: var(--ciano);
+      transition: transform 0.3s, color 0.3s;
     }
 
-    footer .social-icons a:hover {
+    .contact a:hover {
       transform: scale(1.2);
       color: var(--white);
     }
 
     .btn-download {
       display: inline-block;
-      margin-top: 1rem;
       background-color: var(--ciano);
       color: #000;
       padding: 0.6rem 1.2rem;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: background 0.3s ease, transform 0.3s ease;
+      border-radius: 30px;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: background 0.3s;
     }
 
     .btn-download:hover {
-      background-color: #00cccc;
-      transform: scale(1.05);
+      background: #00cccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: var(--text);
     }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-20px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .skill {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--ciano);
+      border-radius: 8px;
+      padding: 0.8rem 1.2rem;
+      font-weight: 600;
+      color: var(--ciano);
+      transition: transform 0.3s;
+    }
+
+    .skill:hover {
+      transform: scale(1.1);
+      background-color: rgba(0,255,255,0.1);
     }
   </style>
 </head>
@@ -143,12 +164,12 @@
   <header>
     <h1>Marcelo Emanoel</h1>
     <p>Especialista em Automação & Inteligência Artificial</p>
-    <a class="btn-download" href="docs/curriculo-marcelo-emanoel.pdf" download>📄 Baixar Currículo</a>
+    <a class="btn-download" href="curriculo.pdf" download>📄 Baixar Currículo</a>
   </header>
 
   <section>
     <h2>Sobre mim</h2>
-    <p>Sou especialista em automação de processos e integração com inteligência artificial. Tenho experiência prática com n8n, chatbots (ManyChat), WhatsApp API, Google Sheets, Mautic, ActiveCampaign, Uzapi e engenharia de prompts para IA generativa. Atuo na criação de soluções inteligentes que otimizam atendimentos, aumentam conversões e reduzem tarefas manuais.</p>
+    <p>Sou especialista em automação de processos e integração com inteligência artificial. Tenho experiência prática com n8n, chatbots (ManyChat), WhatsApp API, Google Sheets, Mautic, Active, Uzapi e engenharia de prompts para IA generativa. Atuo na criação de soluções inteligentes que otimizam atendimentos, aumentam conversões e reduzem tarefas manuais.</p>
   </section>
 
   <section>
@@ -157,7 +178,7 @@
     <h3>IA para Captação e Encaminhamento de Pacientes</h3>
     <div class="badge">n8n</div><div class="badge">GPT</div><div class="badge">Google Sheets</div><div class="badge">WhatsApp API</div>
     <p><strong>Cliente:</strong> Rede Dentistas que Salvam Dentes</p>
-    <p><strong>Impacto:</strong> IA ativa com dezenas de indicações por semana, contribuindo para faturamento superior a R$ 1 milhão. Ticket médio de R$ 7.000.</p>
+    <p><strong>Impacto:</strong> IA ativa com dezenas de indicações por semana, contribuindo para faturamento da empresa superior a R$ 1 milhão. Ticket médio de R$ 7.000.</p>
 
     <h3>Automação de Captação para Cursos Online</h3>
     <div class="badge">Hotmart</div><div class="badge">Mautic</div><div class="badge">n8n</div>
@@ -175,13 +196,28 @@
     <p><strong>Impacto:</strong> Criação de fluxos completos de pré-lançamento, segmentação por comportamento e integração entre leads e agendamento.</p>
   </section>
 
-  <footer>
-    <p>Conecte-se comigo:</p>
-    <div class="social-icons">
-      <a href="https://wa.me/5561996463677" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.linkedin.com/in/marcelo-emanoel-96bab1315/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">n8n</div>
+      <div class="skill">ManyChat</div>
+      <div class="skill">Google Sheets</div>
+      <div class="skill">API WhatsApp</div>
+      <div class="skill">Mautic</div>
+      <div class="skill">Prompt Engineering</div>
+      <div class="skill">Integrações</div>
+      <div class="skill">HTML</div>
+      <div class="skill">ActiveCampaign</div>
     </div>
-    <p>© 2025 Marcelo Emanoel</p>
+  </section>
+
+  <div class="contact">
+    <a href="https://wa.me/5561996463677" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/in/marcelo-emanoel-96bab1315/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <footer>
+    © 2025 Marcelo Emanoel
   </footer>
 </body>
 </html>
