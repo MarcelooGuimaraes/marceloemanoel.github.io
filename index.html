@@ -1,117 +1,128 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Marcelo Emanoel - Portfólio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
+    :root {
+      --gradiente-tech: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      --bg-card: rgba(15, 15, 25, 0.8);
+      --ciano: #00e6e6;
+      --white: #ffffff;
+      --text: #e0e0e0;
+    }
+
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Inter', sans-serif;
-      background: #0a0f1a;
-      color: #ffffff;
+      background: var(--gradiente-tech);
+      color: var(--text);
       line-height: 1.6;
     }
 
     header {
       text-align: center;
       padding: 4rem 1rem 2rem;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
+      color: var(--white);
       animation: fadeIn 1s ease-in-out;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: 800;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin-top: 0.5rem;
+      color: var(--ciano);
     }
 
     section {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    .card {
-      background: #121d2f;
+      background: var(--bg-card);
       border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 0 transparent;
-      transition: transform 0.3s, box-shadow 0.3s;
+      padding: 2rem;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 24px rgba(0, 188, 212, 0.25);
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 40px rgba(0,255,255,0.2);
     }
 
     h2 {
-      color: #00e5ff;
-      font-size: 1.5rem;
+      color: var(--ciano);
+      font-size: 1.8rem;
       margin-bottom: 1rem;
     }
 
     h3 {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      color: #ffffff;
+      color: var(--white);
+      margin-top: 1.2rem;
     }
 
     .badge {
       display: inline-block;
-      background: #00bcd4;
-      color: #fff;
-      padding: 4px 10px;
-      border-radius: 20px;
+      background: var(--ciano);
+      color: #000;
       font-size: 0.8rem;
-      margin-right: 8px;
-      margin-top: 6px;
+      padding: 0.3rem 0.6rem;
+      border-radius: 20px;
+      margin: 0.3rem 0.2rem;
+      font-weight: 600;
     }
 
-    .footer {
-      background: #0d131f;
+    a {
+      color: var(--ciano);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
       text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 3rem;
-      font-size: 0.95rem;
-      color: #aaa;
+      padding: 2rem;
+      color: var(--text);
     }
 
-    .footer a {
-      color: #00e5ff;
-      margin: 0 10px;
+    .contact {
+      margin-top: 1rem;
+    }
+
+    .contact a {
+      margin: 0 1rem;
+      display: inline-block;
       font-size: 1.2rem;
-      transition: color 0.2s ease;
+      transition: transform 0.3s;
     }
 
-    .footer a:hover {
-      color: #fff;
+    .contact a:hover {
+      transform: scale(1.2);
     }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .card {
-        padding: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Marcelo Emanoel</h1>
+    <p>Especialista em Automação & Inteligência Artificial</p>
+  </header>
 
   <header>
     <h1>Marcelo Emanoel</h1>
