@@ -1,63 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marcelo Emanoel | Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marcelo Emanoel - Especialista em Automação e IA">
+  <title>Marcelo Emanoel | IA & Automação</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    :root {
+      --primary: #0f172a;
+      --secondary: #1e293b;
+      --accent: #00eaff;
+      --text-light: #e2e8f0;
+      --text-muted: #94a3b8;
+      --radius: 12px;
+      --transition: 0.3s ease;
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #222;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--primary);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
     header {
-      background: #002b5b;
-      color: #fff;
-      padding: 2rem 1rem;
+      background: linear-gradient(145deg, #0f172a, #1e293b);
+      padding: 4rem 2rem 6rem;
       text-align: center;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      color: #fff;
     }
+
     header p {
+      font-size: 1.25rem;
+      color: var(--accent);
       margin-top: 0.5rem;
-      font-size: 1.2rem;
     }
+
     main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 1000px;
+      margin: -4rem auto 3rem;
+      padding: 0 2rem;
     }
+
     section {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      padding: 1.5rem;
+      background-color: var(--secondary);
+      border-radius: var(--radius);
+      padding: 2rem;
       margin-bottom: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      transition: var(--transition);
     }
-    section h2 {
-      color: #002b5b;
-      margin-top: 0;
+
+    section:hover {
+      transform: translateY(-4px);
     }
-    .projeto {
-      margin-bottom: 1.5rem;
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+      font-size: 1.75rem;
     }
-    .projeto h3 {
-      margin-bottom: 0.3rem;
-      color: #444;
+
+    ul li {
+      margin-bottom: 1rem;
     }
-    .projeto p {
-      margin: 0.3rem 0;
+
+    .tag {
+      display: inline-block;
+      background: #0ea5e9;
+      color: #fff;
+      font-size: 0.85rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      margin-right: 0.5rem;
     }
+
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #e0e0e0;
+      padding: 2rem;
+      color: var(--text-muted);
       font-size: 0.9rem;
-      color: #444;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -66,54 +107,46 @@
     <h1>Marcelo Emanoel</h1>
     <p>Especialista em Automação e Inteligência Artificial</p>
   </header>
+
   <main>
     <section>
       <h2>Sobre mim</h2>
-      <p>Sou especialista em automação de processos e integração com inteligência artificial. Tenho experiência prática com n8n, chatbots (ManyChat), WhatsApp API, Google Sheets e engenharia de prompts para IA generativa. Atuo na criação de soluções inteligentes que otimizam atendimentos, aumentam conversões e reduzem tarefas manuais.</p>
+      <p>
+        Sou especialista em automação de processos e integração com inteligência artificial. Tenho experiência prática com n8n, chatbots (ManyChat), WhatsApp API, Google Sheets e engenharia de prompts para IA generativa.
+        Atuo na criação de soluções inteligentes que otimizam atendimentos, aumentam conversões e reduzem tarefas manuais.
+      </p>
     </section>
 
     <section>
       <h2>Projetos</h2>
-
-      <div class="projeto">
-        <h3>IA para Captação e Encaminhamento de Pacientes</h3>
-        <p><strong>Cliente:</strong> Rede Dentistas que Salvam Dentes</p>
-        <p><strong>Tecnologias:</strong> n8n, GPT, Google Sheets, WhatsApp API</p>
-        <p><strong>Impacto:</strong> dezenas de pacientes conectados diariamente com dentistas especializados. Ticket médio de R$ 7.000.</p>
-      </div>
-
-      <div class="projeto">
-        <h3>Automação de Captação para Cursos Online</h3>
-        <p><strong>Cliente:</strong> Cris Miura Treinamento</p>
-        <p><strong>Tecnologias:</strong> n8n, Google Sheets, WhatsApp, GPT</p>
-        <p><strong>Impacto:</strong> aumento na conversão de leads e economia de tempo da equipe.</p>
-      </div>
-
-      <div class="projeto">
-        <h3>Fluxos Inteligentes para Relacionamento com Leads</h3>
-        <p><strong>Cliente:</strong> Lâncio Educação Online</p>
-        <p><strong>Tecnologias:</strong> n8n, ActiveCampaign, WhatsApp, GPT</p>
-        <p><strong>Impacto:</strong> reativação de leads e redução de tarefas repetitivas em 80%.</p>
-      </div>
-
-      <div class="projeto">
-        <h3>IA e Infraestrutura para Lançamentos – Perioflix e Mentoria DEX</h3>
-        <p><strong>Cliente:</strong> Dra. Cristina Miura</p>
-        <p><strong>Tecnologias:</strong> n8n, GPT, Google Sheets, WhatsApp, ActiveCampaign, Mautic</p>
-        <p><strong>Impacto:</strong> +R$ 960 mil em vendas, 481 matrículas, dezenas de pacientes indicados semanalmente. Automação completa do pré-lançamento e distribuição de pacientes aos alunos.</p>
-      </div>
+      <ul>
+        <li>
+          <strong>IA para Captação e Encaminhamento de Pacientes</strong><br>
+          <span class="tag">n8n</span><span class="tag">GPT</span><span class="tag">Google Sheets</span>
+          <br><em>Cliente:</em> Rede Dentistas que Salvam Dentes<br>
+          <em>Impacto:</em> IA ativa com dezenas de indicações por semana, contribuindo para faturamento superior a R$ 1 milhão.
+        </li>
+        <li>
+          <strong>Automação de Captação para Cursos Online</strong><br>
+          <span class="tag">Zapier</span><span class="tag">WhatsApp API</span><br>
+          <em>Cliente:</em> Infoprodutores e escolas online<br>
+          <em>Impacto:</em> Fluxos automatizados de leads com integrações multicanal e aumento de conversão em 38%.
+        </li>
+      </ul>
     </section>
 
     <section>
       <h2>Contato</h2>
-      <p>Email: marceloemanoel82@gmail.com</p>
-      <p>Telefone: (61) 99646-3677</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/marcelo-emanoel-96bab1315" target="_blank">linkedin.com/in/marcelo-emanoel-96bab1315</a></p>
+      <p>Quer conversar ou trabalhar comigo?</p>
+      <p>
+        <a href="https://www.linkedin.com/in/seuusuario" target="_blank">LinkedIn</a> |
+        <a href="https://wa.me/55SEUNUMERO" target="_blank">WhatsApp</a>
+      </p>
     </section>
   </main>
+
   <footer>
-    © 2025 Marcelo Emanoel — Todos os direitos reservados
+    &copy; 2025 Marcelo Emanoel. Todos os direitos reservados.
   </footer>
 </body>
 </html>
-Atualiza index.html com portfólio real
