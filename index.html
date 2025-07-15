@@ -4,11 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Marcelo Emanoel - Portfólio</title>
+
+  <!-- Fontes e Ícones -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
   <style>
     :root {
       --gradiente-tech: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      --bg-card: rgba(15, 15, 25, 0.8);
+      --bg-card: rgba(15, 15, 25, 0.85);
       --ciano: #00e6e6;
       --white: #ffffff;
       --text: #e0e0e0;
@@ -68,7 +72,7 @@
 
     h3 {
       color: var(--white);
-      margin-top: 1.2rem;
+      margin-top: 1.5rem;
     }
 
     .badge {
@@ -97,19 +101,19 @@
       color: var(--text);
     }
 
-    .contact {
+    footer .social-icons {
       margin-top: 1rem;
     }
 
-    .contact a {
-      margin: 0 1rem;
-      display: inline-block;
-      font-size: 1.2rem;
-      transition: transform 0.3s;
+    footer .social-icons a {
+      margin: 0 0.8rem;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
     }
 
-    .contact a:hover {
+    footer .social-icons a:hover {
       transform: scale(1.2);
+      color: var(--white);
     }
 
     @keyframes fadeIn {
@@ -118,54 +122,49 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Marcelo Emanoel</h1>
     <p>Especialista em Automação & Inteligência Artificial</p>
   </header>
 
-  <header>
-    <h1>Marcelo Emanoel</h1>
-    <p>Especialista em Automação & Inteligência Artificial</p>
-  </header>
-
   <section>
-    <div class="card">
-      <h2>Sobre mim</h2>
-      <p>Sou especialista em automação de processos e integração com inteligência artificial. Tenho experiência prática com n8n, chatbots (ManyChat), WhatsApp API, Google Sheets, Mautic, Active, Uzapi e engenharia de prompts para IA generativa. Atuo na criação de soluções inteligentes que otimizam atendimentos, aumentam conversões e reduzem tarefas manuais.</p>
-    </div>
-
-    <div class="card">
-      <h2>Projetos</h2>
-
-      <h3>IA para Captação e Encaminhamento de Pacientes</h3>
-      <div class="badge">n8n</div><div class="badge">GPT</div><div class="badge">Google Sheets</div><div class="badge">WhatsApp API</div>
-      <p><strong>Cliente:</strong> Rede Dentistas que Salvam Dentes</p>
-      <p><strong>Impacto:</strong> IA ativa com dezenas de indicações por semana, contribuindo para faturamento da empresa superior a R$ 1 milhão. Ticket médio de R$ 7.000.</p>
-
-      <h3>Automação de Captação para Cursos Online</h3>
-      <div class="badge">Hotmart</div><div class="badge">Mautic</div><div class="badge">n8n</div>
-      <p><strong>Cliente:</strong> Perioflix e Metodo Dentista que salva Dentes</p>
-      <p><strong>Impacto:</strong> IA integrada a vendas automatizadas com tags, e-mails e envio de dados. Redução de tempo operacional e aumento de conversão.</p>
-
-      <h3>IA de Atendimento com Regras e Tom Humanizado</h3>
-      <div class="badge">ChatGPT</div><div class="badge">Prompt Engineering</div><div class="badge">Google Sheets</div>
-      <p><strong>Cliente:</strong> Método Dentista que Salva Dentes</p>
-      <p><strong>Impacto:</strong> IA de triagem empática com roteiros e variações de linguagem. Geração de centenas de oportunidades com alta taxa de conversão.</p>
-
-      <h3>Infraestrutura de Pré-lançamento Automatizado</h3>
-      <div class="badge">Landing Page</div><div class="badge">ActiveCampaign</div><div class="badge">WhatsApp</div>
-      <p><strong>Cliente:</strong> Cris Miura</p>
-      <p><strong>Impacto:</strong> Criação de fluxos completos de pré-lançamento, segmentação por comportamento e integração entre leads e agendamento.</p>
-    </div>
+    <h2>Sobre mim</h2>
+    <p>Sou especialista em automação de processos e integração com inteligência artificial. Tenho experiência prática com n8n, chatbots (ManyChat), WhatsApp API, Google Sheets, Mautic, ActiveCampaign, Uzapi e engenharia de prompts para IA generativa. Atuo na criação de soluções inteligentes que otimizam atendimentos, aumentam conversões e reduzem tarefas manuais.</p>
   </section>
 
-  <div class="footer">
-    <p>Conecte-se comigo:</p>
-    <a href="https://wa.me/5561996463677" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.linkedin.com/in/marcelo-emanoel-96bab1315/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <p>© 2025 Marcelo Emanoel</p>
-  </div>
+  <section>
+    <h2>Projetos</h2>
 
+    <h3>IA para Captação e Encaminhamento de Pacientes</h3>
+    <div class="badge">n8n</div><div class="badge">GPT</div><div class="badge">Google Sheets</div><div class="badge">WhatsApp API</div>
+    <p><strong>Cliente:</strong> Rede Dentistas que Salvam Dentes</p>
+    <p><strong>Impacto:</strong> IA ativa com dezenas de indicações por semana, contribuindo para faturamento superior a R$ 1 milhão. Ticket médio de R$ 7.000.</p>
+
+    <h3>Automação de Captação para Cursos Online</h3>
+    <div class="badge">Hotmart</div><div class="badge">Mautic</div><div class="badge">n8n</div>
+    <p><strong>Cliente:</strong> Perioflix e Método Dentista que Salva Dentes</p>
+    <p><strong>Impacto:</strong> IA integrada a vendas automatizadas com tags, e-mails e envio de dados. Redução de tempo operacional e aumento de conversão.</p>
+
+    <h3>IA de Atendimento com Regras e Tom Humanizado</h3>
+    <div class="badge">ChatGPT</div><div class="badge">Prompt Engineering</div><div class="badge">Google Sheets</div>
+    <p><strong>Cliente:</strong> Método Dentista que Salva Dentes</p>
+    <p><strong>Impacto:</strong> IA de triagem empática com roteiros e variações de linguagem. Geração de centenas de oportunidades com alta taxa de conversão.</p>
+
+    <h3>Infraestrutura de Pré-lançamento Automatizado</h3>
+    <div class="badge">Landing Page</div><div class="badge">ActiveCampaign</div><div class="badge">WhatsApp</div>
+    <p><strong>Cliente:</strong> Cris Miura</p>
+    <p><strong>Impacto:</strong> Criação de fluxos completos de pré-lançamento, segmentação por comportamento e integração entre leads e agendamento.</p>
+  </section>
+
+  <footer>
+    <p>Conecte-se comigo:</p>
+    <div class="social-icons">
+      <a href="https://wa.me/5561996463677" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/marcelo-emanoel-96bab1315/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>© 2025 Marcelo Emanoel</p>
+  </footer>
 </body>
 </html>
