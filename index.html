@@ -1,152 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Marcelo Emanoel - Especialista em Automação e IA">
-  <title>Marcelo Emanoel | IA & Automação</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcelo Emanoel - Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    :root {
-      --primary: #0f172a;
-      --secondary: #1e293b;
-      --accent: #00eaff;
-      --text-light: #e2e8f0;
-      --text-muted: #94a3b8;
-      --radius: 12px;
-      --transition: 0.3s ease;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--primary);
-      color: var(--text-light);
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0a0f1a;
+      color: #ffffff;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(145deg, #0f172a, #1e293b);
-      padding: 4rem 2rem 6rem;
       text-align: center;
+      padding: 4rem 1rem 2rem;
+      background: linear-gradient(to right, #00bcd4, #0077be);
+      color: #fff;
+      animation: fadeIn 1s ease-in-out;
     }
 
     header h1 {
-      font-size: 3rem;
-      color: #fff;
+      margin: 0;
+      font-size: 2.5rem;
     }
 
     header p {
-      font-size: 1.25rem;
-      color: var(--accent);
+      font-size: 1.2rem;
       margin-top: 0.5rem;
     }
 
-    main {
-      max-width: 1000px;
-      margin: -4rem auto 3rem;
-      padding: 0 2rem;
-    }
-
     section {
-      background-color: var(--secondary);
-      border-radius: var(--radius);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-      transition: var(--transition);
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
 
-    section:hover {
+    .card {
+      background: #121d2f;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 0 transparent;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
       transform: translateY(-4px);
+      box-shadow: 0 6px 24px rgba(0, 188, 212, 0.25);
     }
 
     h2 {
-      color: var(--accent);
-      margin-bottom: 1rem;
-      font-size: 1.75rem;
-    }
-
-    ul li {
+      color: #00e5ff;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
     }
 
-    .tag {
+    h3 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .badge {
       display: inline-block;
-      background: #0ea5e9;
+      background: #00bcd4;
       color: #fff;
-      font-size: 0.85rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: 6px;
-      margin-right: 0.5rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-right: 8px;
+      margin-top: 6px;
     }
 
-    footer {
+    .footer {
+      background: #0d131f;
       text-align: center;
-      padding: 2rem;
-      color: var(--text-muted);
-      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #aaa;
     }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
+    .footer a {
+      color: #00e5ff;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      transition: color 0.2s ease;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .footer a:hover {
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .card {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Marcelo Emanoel</h1>
-    <p>Especialista em Automação e Inteligência Artificial</p>
+    <p>Especialista em Automação & Inteligência Artificial</p>
   </header>
 
-  <main>
-    <section>
+  <section>
+    <div class="card">
       <h2>Sobre mim</h2>
-      <p>
-        Sou especialista em automação de processos e integração com inteligência artificial. Tenho experiência prática com n8n, chatbots (ManyChat), WhatsApp API, Google Sheets e engenharia de prompts para IA generativa.
-        Atuo na criação de soluções inteligentes que otimizam atendimentos, aumentam conversões e reduzem tarefas manuais.
-      </p>
-    </section>
+      <p>Sou especialista em automação de processos e integração com inteligência artificial. Tenho experiência prática com n8n, chatbots (ManyChat), WhatsApp API, Google Sheets e engenharia de prompts para IA generativa. Atuo na criação de soluções inteligentes que otimizam atendimentos, aumentam conversões e reduzem tarefas manuais.</p>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Projetos</h2>
-      <ul>
-        <li>
-          <strong>IA para Captação e Encaminhamento de Pacientes</strong><br>
-          <span class="tag">n8n</span><span class="tag">GPT</span><span class="tag">Google Sheets</span>
-          <br><em>Cliente:</em> Rede Dentistas que Salvam Dentes<br>
-          <em>Impacto:</em> IA ativa com dezenas de indicações por semana, contribuindo para faturamento superior a R$ 1 milhão.
-        </li>
-        <li>
-          <strong>Automação de Captação para Cursos Online</strong><br>
-          <span class="tag">Zapier</span><span class="tag">WhatsApp API</span><br>
-          <em>Cliente:</em> Infoprodutores e escolas online<br>
-          <em>Impacto:</em> Fluxos automatizados de leads com integrações multicanal e aumento de conversão em 38%.
-        </li>
-      </ul>
-    </section>
 
-    <section>
-      <h2>Contato</h2>
-      <p>Quer conversar ou trabalhar comigo?</p>
-      <p>
-        <a href="https://www.linkedin.com/in/seuusuario" target="_blank">LinkedIn</a> |
-        <a href="https://wa.me/55SEUNUMERO" target="_blank">WhatsApp</a>
-      </p>
-    </section>
-  </main>
+      <h3>IA para Captação e Encaminhamento de Pacientes</h3>
+      <div class="badge">n8n</div><div class="badge">GPT</div><div class="badge">Google Sheets</div><div class="badge">WhatsApp API</div>
+      <p><strong>Cliente:</strong> Rede Dentistas que Salvam Dentes</p>
+      <p><strong>Impacto:</strong> IA ativa com dezenas de indicações por semana, contribuindo para faturamento superior a R$ 1 milhão. Ticket médio de R$ 7.000.</p>
 
-  <footer>
-    &copy; 2025 Marcelo Emanoel. Todos os direitos reservados.
-  </footer>
+      <h3>Automação de Captação para Cursos Online</h3>
+      <div class="badge">Hotmart</div><div class="badge">Mautic</div><div class="badge">n8n</div>
+      <p><strong>Cliente:</strong> Perioflix</p>
+      <p><strong>Impacto:</strong> IA integrada a vendas automatizadas com tags, e-mails e envio de dados. Redução de tempo operacional e aumento de conversão.</p>
+
+      <h3>IA de Atendimento com Regras e Tom Humanizado</h3>
+      <div class="badge">ChatGPT</div><div class="badge">Prompt Engineering</div><div class="badge">Google Sheets</div>
+      <p><strong>Cliente:</strong> Método Dentista que Salva Dentes</p>
+      <p><strong>Impacto:</strong> IA de triagem empática com roteiros e variações de linguagem. Geração de centenas de oportunidades com alta taxa de conversão.</p>
+
+      <h3>Infraestrutura de Pré-lançamento Automatizado</h3>
+      <div class="badge">Landing Page</div><div class="badge">ActiveCampaign</div><div class="badge">WhatsApp</div>
+      <p><strong>Cliente:</strong> Cris Miura</p>
+      <p><strong>Impacto:</strong> Criação de fluxos completos de pré-lançamento, segmentação por comportamento e integração entre leads e agendamento.</p>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>Conecte-se comigo:</p>
+    <a href="https://wa.me/5561996463677" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/in/marcelo-emanoel-96bab1315/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <p>© 2025 Marcelo Emanoel</p>
+  </div>
+
 </body>
 </html>
